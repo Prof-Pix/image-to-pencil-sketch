@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/static/style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Image to Pencil Sketch</h1>
+    </header>
+
+    <main>
+      <section class="upload-file-section">
+        <form class="upload-file-form">
+          <label for="file-upload" class="custom-file-upload" id="drop-area">
+            <div>
+              <i class="fa-solid fa-upload fa-2xl" style="color: #9ca3af"></i>
+            </div>
+
+            <div class="drag-and-drop">
+              <p>Drag and drop your image here, or click to select a file</p>
+            </div>
+
+            <div>
+              <p id="file-name">Select Image</p>
+            </div>
+          </label>
+          <input type="file" id="file-upload" class="file-input" />
+
+          <section class="sketch-button-section">
+            <button>
+              <i class="fa-solid fa-wand-magic-sparkles"></i>
+              <p>Sketch Magic</p>
+            </button>
+          </section>
+        </form>
+      </section>
+
+      <section class="processed-image-section">
+        <img class="original-image" />
+        <div>
+          <ul>
+            <li>
+              <button>
+                <i class="fa-regular fa-floppy-disk"></i>
+                <p>Download/Save</p>
+              </button>
+            </li>
+            <li>
+              <button>
+                <i class="fa-solid fa-rotate-left"></i>
+                <p>Reset</p>
+              </button>
+            </li>
+          </ul>
+        </div>
+        <img id="processed-image" src="" />
+      </section>
+    </main>
+    <script src="/static/script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/ea3bfd0f41.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

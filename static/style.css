@@ -1,0 +1,202 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: "Poppins";
+  background-color: #020617;
+}
+
+header {
+  padding: 5px;
+  margin: 10px;
+}
+
+header h1 {
+  color: #f3f4f6;
+}
+
+.file-input {
+  display: none;
+}
+
+.upload-file-section {
+  margin-bottom: 40px;
+}
+
+.upload-file-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid #d4d4d8;
+  width: 450px;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.custom-file-upload {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  border: 2px solid #d1d5db;
+  margin: 20px 10px;
+  padding: 40px 25px 30px 25px;
+  border-style: dashed;
+  border-radius: 5px;
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+}
+
+.shake {
+  animation: shake 0.5s;
+}
+
+/*Icon Div*/
+.custom-file-upload div:nth-child(1) {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.drag-and-drop {
+  margin-bottom: 10px;
+}
+
+/*Drag and Drop Label*/
+.drag-and-drop p:nth-child(1) {
+  font-weight: 500;
+  text-align: center;
+  font-size: 0.8rem;
+  color: #f3f4f6;
+}
+
+/*Select Image Div*/
+.custom-file-upload div:nth-child(3) {
+  display: flex;
+  justify-content: center;
+}
+
+/*Select Image Label*/
+.custom-file-upload div:nth-child(3) p {
+  color: #f3f4f6;
+  border: 1px solid #e5e7eb;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 0.8em;
+  max-width: 300px;
+  overflow: hidden;
+  white-space: no-wrap;
+  text-overflow: ellipsis;
+}
+
+.custom-file-upload div:nth-child(3) p:hover {
+  background-color: #1f2937;
+}
+
+.dragging {
+  background-color: #d1d5db; /* Light blue background */
+  border: 2px dashed #d1d5db; /* Blue dashed border */
+  box-shadow: 0 0 10px rgba(211, 211, 211, 0.5); /* Light gray shadow */
+}
+
+.sketch-button-section {
+  display: flex;
+  justify-content: center;
+}
+
+.sketch-button-section button {
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #6b7280;
+  cursor: pointer;
+}
+
+.sketch-button-section button:hover {
+  background-color: #4b5563;
+  transition: 0.2s;
+}
+
+.sketch-button-section button i,
+.sketch-button-section button p {
+  color: #f3f4f6;
+}
+
+.sketch-button-section button p {
+  font-family: "Poppins";
+}
+
+.original-image {
+  display: none;
+}
+
+.processed-image-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.processed-image-section ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: end;
+  column-gap: 20px;
+}
+
+.processed-image-section li p,
+.processed-image-section li i {
+  color: #f3f4f6;
+}
+
+.processed-image-section li p {
+  font-family: "Poppins";
+}
+
+/*Download Button*/
+.processed-image-section button {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.processed-image-section li:nth-child(1) button {
+  background-color: #166534;
+}
+
+.processed-image-section li:nth-child(2) button {
+  background-color: #b91c1c;
+}
