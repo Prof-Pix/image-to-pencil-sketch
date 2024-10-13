@@ -9,5 +9,5 @@
 
 ## Backend Tools:
 - **Python**
-  - **Framework Used:**
+  - **Framework Used:** **Flask**
   - **Libraries:** **OpenCV**
