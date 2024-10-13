@@ -3,11 +3,11 @@
 **Started:** October 13, 2024
 
 ## Frontend Tools:
-- **HTML**
-- **CSS**
-- **JavaScript**
+- HTML
+- CSS
+- JavaScript
 
 ## Backend Tools:
 - **Python**
-  - **Framework Used:** **Flask**
-  - **Libraries:** **OpenCV**
+  - **Framework Used:** Flask
+  - **Libraries:** OpenCV
